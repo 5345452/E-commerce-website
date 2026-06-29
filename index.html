@@ -26,21 +26,21 @@
     </div>
 
     <nav class="navbar">
-        <a href="#">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">Categories</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        <a href="#home">Home</a>
+        <a href="#shop">Shop</a>
+        <a href="#categories">Categories</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <div class="header-icons">
 
-        <button class="icon-btn">
+        <button class="icon-btn search-btn">
             <i class="fas fa-search"></i>
         </button>
 
-        <button class="icon-btn">
+        <button class="icon-btn wishlist-btn">
             <i class="fas fa-heart"></i>
+            <span class="wishlist-count">0</span>
         </button>
 
         <button class="icon-btn cart-btn">
@@ -53,11 +53,15 @@
         </button>
 
     </div>
-
 </header>
+<div class="search-box">
+    <input type="text" id="searchInput" 
+    placeholder="Search products...">
+</div>
+
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero" id="home">
 
     <div class="hero-content">
 
@@ -112,6 +116,7 @@
 </section>
 
 <!-- Featured Products -->
+ <section id="shop">
 <div class="section-header">
     <h2>Featured Products</h2>
     <p>Best sellers this week</p>
@@ -119,51 +124,78 @@
 
 <div class="product-grid">
 
+
     <!-- Product 1 -->
     <div class="product-card">
         <div class="product-image">
-            <img src="classic-dress.jpg" alt="classic dress">
+            <img src="images/classic-dress.jpg" alt="classic dress">
         </div>
         <div class="product-info">
+            <button class="product-heart">
+                <i class="far fa-heart"></i>
+            </button>
             <h3>Classic Dress</h3>
             <p class="price">KES 2,500</p>
-            <button class="add-cart-btn">Add To Cart</button>
+            <button class="add-cart-btn"
+            data-name="Classic Dress"
+            data-price="2500">
+            Add To Cart
+        </button>
         </div>
     </div>
 
     <!-- Product 2 -->
     <div class="product-card">
         <div class="product-image">
-            <img src="fashion-sneakers.jpg" alt="sneakers">
+            <img src="images/fashion-sneakers.jpg" alt="sneakers">
         </div>
         <div class="product-info">
+            <button class="product-heart">
+                <i class="far fa-heart"></i>
+            </button>
             <h3>Fashion Sneakers</h3>
             <p class="price">KES 3,199</p>
-            <button class="add-cart-btn">Add To Cart</button>
+            <button class="add-cart-btn"
+            data-name="Fashion Sneakers"
+            data-price="3199">
+            Add To Cart
+        </button>
         </div>
     </div>
 
     <!-- Product 3 -->
     <div class="product-card">
         <div class="product-image">
-            <img src="casual-hoodie.jpg" alt="casual hoodie">
+            <img src="images/casual-hoodie.jpg" alt="casual hoodie">
         </div>
         <div class="product-info">
+            <button class="product-heart">
+                <i class="far fa-heart"></i>
+            </button>
             <h3>Casual Hoodie</h3>
             <p class="price">KES 1,300</p>
-            <button class="add-cart-btn">Add To Cart</button>
+            <button class="add-cart-btn"
+            data-name="Casual Hoodie"
+            data-price="1300">
+            Add To Cart</button>
         </div>
     </div>
 
     <!-- Product 4 -->
     <div class="product-card">
         <div class="product-image">
-            <img src="men's-jacket.jpg" alt="men's jacket">
+            <img src="images/men's-jacket.jpg" alt="men's jacket">
         </div>
         <div class="product-info">
+            <button class="product-heart">
+                <i class="far fa-heart"></i>
+            </button>
             <h3>Men's Jacket</h3>
             <p class="price">KES 3,500</p>
-            <button class="add-cart-btn">Add To Cart</button>
+            <button class="add-cart-btn"
+            data-name="Men's Jacket"
+            data-price="3500">
+            Add To Cart</button>
         </div>
     </div>
 
@@ -173,21 +205,33 @@
             <img src="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=800&q=80" alt="elegant handbag">
         </div>
         <div class="product-info">
+            <button class="product-heart">
+                <i class="far fa-heart"></i>
+            </button>
             <h3>Elegant Handbag</h3>
             <p class="price">KES 3,200</p>
-            <button class="add-cart-btn">Add To Cart</button>
+            <button class="add-cart-btn"
+            data-name="Elegant Handbag"
+            data-price="3200">
+            Add To Cart</button>
         </div>
     </div>
 
     <!-- Product 6 -->
     <div class="product-card">
         <div class="product-image">
-            <img src="summer-dress.jpg" alt="summer dress">
+            <img src="images/summer-dress.jpg" alt="summer dress">
         </div>
         <div class="product-info">
+            <button class="product-heart">
+                <i class="far fa-heart"></i>
+            </button>
             <h3>Summer Dress</h3>
             <p class="price">KES 2,200</p>
-            <button class="add-cart-btn">Add To Cart</button>
+            <button class="add-cart-btn"
+            data-name="Summer Dress"
+            data-price="2200">
+            Add To Cart</button>
         </div>
     </div>
 
@@ -197,9 +241,15 @@
             <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=800&q=80" alt="sport shoes">
         </div>
         <div class="product-info">
+            <button class="product-heart">
+                <i class="far fa-heart"></i>
+            </button>
             <h3>Sport Shoes</h3>
             <p class="price">KES 2,799</p>
-            <button class="add-cart-btn">Add To Cart</button>
+            <button class="add-cart-btn"
+            data-name="Sport Shoes"
+            data-price="2799">
+            Add To Cart</button>
         </div>
     </div>
 
@@ -209,16 +259,22 @@
             <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?auto=format&fit=crop&w=800&q=80" alt="luxury watch">
         </div>
         <div class="product-info">
+            <button class="product-heart">
+                <i class="far fa-heart"></i>
+            </button>
             <h3>Luxury Watch</h3>
             <p class="price">KES 2,999</p>
-            <button class="add-cart-btn">Add To Cart</button>
+            <button class="add-cart-btn"
+            data-name="Luxury Watch"
+            data-price="2999">
+            Add To Cart</button>
         </div>
     </div>
 
-</div>
+</section>
 
 <!-- Newsletter -->
-<section class="newsletter">
+<section class="newsletter" id="categories">
 
     <h2>Stay Updated</h2>
     <p>Subscribe for discounts and new arrivals.</p>
@@ -232,7 +288,7 @@
 </div>
 
 <!-- Footer -->
-<footer class="footer">
+<footer class="footer" id="contact">
 
     <div class="footer-container">
 
@@ -243,10 +299,10 @@
 
         <div class="footer-column">
             <h4>Quick Links</h4>
-            <a href="#">Home</a>
-            <a href="#">Shop</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+            <a href="#home">Home</a>
+            <a href="#shop">Shop</a>
+            <a href="#categories">About</a>
+            <a href="#contact">Contact</a>
         </div>
 
         <div class="footer-column">
@@ -277,10 +333,55 @@
 </footer>
 
 <!-- WhatsApp Button -->
-<a href="https://wa.me/254700000000" class="whatsapp-btn">
+<a href="https://wa.me/254115134329"
+class="whatsapp-btn" target="_blank">
     <i class="fab fa-whatsapp"></i>
 </a>
+<!--Wishlist Sidebar-->
+<div class="wishlist-sidebar">
+    <div class="cart-header">
+        <h3>Wishlist</h3>
+        <button class="close-wishlist">✕</button>
+    </div>
+    <div class="wishlist-items"></div>
+</div>
+<!--Cart Sidebar-->
+<div class="cart-sidebar">
+    <div class="cart-header">
+        <h3>Shopping Cart</h3>
+        <button class="close-cart">✕</button>
+    </div>
+    <div class="cart-items"></div>
+    <div class="cart-footer">
+        <h4>Total: KES <span id="cart-total">0</span></h4>
+        <button class="checkout-btn">Checkout</button>
+        </div>
+</div>
+<div class="checkout-modal">
 
+    <div class="checkout-content">
+
+        <h2>Checkout</h2>
+
+        <form id="checkout-form">
+
+            <input type="text" placeholder="Full Name" required>
+
+            <input type="email" placeholder="Email Address" required>
+
+            <input type="tel" placeholder="Phone Number" required>
+
+            <input type="text" placeholder="Delivery Location" required>
+
+            <button type="submit" class="place-order-btn">
+                Place Order
+            </button>
+
+        </form>
+
+    </div>
+
+</div>
 <script src="script.js"></script>
 
 </body>
